@@ -106,9 +106,6 @@ padding: 2rem;
 width: 100%;
 text-align: center;
 margin-top: 1rem;
-/* @media (max-width: 768px) {
-      margin-top: 20%;
-    } */
 h2 {
     color: #F9F9F9;
     font-weight: 500;
@@ -132,11 +129,11 @@ h2 {
 export const Banner = styled.section`
 /* border: solid 1px white; */
 height: 50vh;
-margin: 12% 3% 0 0%;
+margin: 12% 3% 0 8%;
 img {
     width: 20vw;
     max-width: 100%;
-    border-radius: 50%;
+    border-radius: 80%;
     transition: 0.2s;
     &:hover {
         transform: scale(1.2);

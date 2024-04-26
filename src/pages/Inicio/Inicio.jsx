@@ -1,6 +1,6 @@
 import Header from "../../components/Header/Header"
 import * as S from "./Styled"
-import nat2 from "../../assets/nat2.png"
+import banner from "../../assets/banner.png"
 
 export default function Inicio() {
   return (
@@ -17,7 +17,7 @@ export default function Inicio() {
         </S.Box>
       </S.Inicio>
       <S.Banner>
-      <a href="https://github.com/NatBarros" target="_blank"><img src={nat2} alt="Minha foto de rosto"/></a>
+      <a href="https://github.com/NatBarros" target="_blank"><img src={banner} alt="Minha foto de rosto"/></a>
       </S.Banner>
     </S.Main>
   )
