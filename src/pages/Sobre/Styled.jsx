@@ -21,7 +21,7 @@ width: 85%;
 
 export const Sobre = styled.section`
 
-border: solid 3px red;
+/* border: solid 3px red; */
 width: 70%;
 height: 55vh;
 @media (max-width: 1000px) {
@@ -69,7 +69,7 @@ h2{
 
 `
 export const Box = styled.div`
-border: solid 1px green;
+/* border: solid 1px green; */
 padding-top: 2%;
 height: 20vh;
 display: flex;

@@ -25,7 +25,7 @@ align-items: center;
 flex-direction: column;
 background-image: linear-gradient(to left, #8257E6, #13131F);
 @media (max-width: 700px) {
-    width: 100%; 
+    width: 100%;
 }
 `
 
@@ -37,6 +37,9 @@ ${center}
 flex-direction: column;
 justify-content: space-evenly;
 color: white;
+@media (max-width: 700px) {
+      display: none;
+    }
 img  {
     width: 45%;
     max-width: 120px;
@@ -68,6 +71,12 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
+@media (max-width: 700px) { // Configurações para telas menores que 700px
+    width: 100%; 
+    flex-direction: row; // Muda para layout horizontal apenas em telas menores
+    justify-content: space-between; // Distribui o conteúdo uniformemente nas telas menores
+  }
+
 ul{
       width: 100%;
     }
@@ -110,7 +119,7 @@ img {
         transform: scale(1.2);
     }
     @media (max-width: 700px) {
-      width: 70%;
+      display: none;
     }
 }
 `

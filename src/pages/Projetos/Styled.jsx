@@ -19,7 +19,7 @@ export const Projetos = styled.section`
 ${center};
 flex-direction: column;
 align-items: center;
-border: solid 1px yellow;
+/* border: solid 1px yellow; */
 width: 85%;
 padding: 2% 0; 
 h1 {
@@ -52,7 +52,7 @@ h1 {
 
 export const Lista = styled.div`
 margin-bottom: 8% ;
- border: solid 2px blue;
+ /* border: solid 2px blue; */
 width: 80vw;
 display: flex;
 flex-direction: column;
