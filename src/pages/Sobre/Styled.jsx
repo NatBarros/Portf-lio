@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import css from "styled-components";
+import styled, { css } from 'styled-components';
 
 
 const center = css`
@@ -9,37 +8,53 @@ const center = css`
   `
 
 export const Main = styled.main`
-/* border: solid 1px red; */
-/* display: block; */
+display: flex;
 height: 100vh;
 background-color: #13131F;
 `
+export const Caixapai = styled.section`
+${center}
+flex-direction: column;
+width: 85%;
+/* border: solid 1px blue; */
+`
 
 export const Sobre = styled.section`
-/* border: solid 3px red; */
-padding-top: 7%;
-margin-left: 14%;
+
+border: solid 3px red;
 width: 70%;
-height: 50vh;
+height: 55vh;
+@media (max-width: 1000px) {
+  height: 80vh;
+  width: auto;
+  }
 h1 {
     font-size: 3.2rem;
     font-weight: 500;
     color: #8257E6;
     line-height: 6rem;
     text-align: center;
+    @media (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 630px) {
+    font-size: 2rem;
+  }
 }
 p {
     text-align: justify;
     color: #828282;
     line-height: 2rem;
+    @media (max-width: 800px) {
+    font-size: 14px;
+  }
+  @media (max-width: 630px) {
+    font-size: 12px;
+  }
 }
 `
 export const Habilidades = styled.section`
-padding-top: 6rem;
-margin-left: 14%;
-display: flex;
-justify-content: center;
-flex-direction: column;
+/* border: solid 1px yellow; */
 /* border: solid 1px green; */
 width: 70%;
 h2{
@@ -47,48 +62,29 @@ h2{
   font-weight: 700;
   text-align: center;
   font-size: 2rem;
+  @media (max-width: 630px) {
+    font-size: 1.4 rem;
+  }
 }
+
 `
 export const Box = styled.div`
+border: solid 1px green;
+padding-top: 2%;
 height: 20vh;
-border: solid 1px blue;
-margin-top: 2rem;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
-/* img {
-  border: solid 1px yellow;
-  border-radius: 25% 0 0 0 ;
-  width: 6vw;
-  transition: 0.3s;
-  cursor: pointer;
-  
-} */
-`
-
-/* figure img:hover {
-  width: 10vw;
-    transform: scale(1.2);
+@media (max-width: 545px) {
+    height: 10vh;
   }
-`
-export const Figure = styled.figure`
-overflow: hidden;
-` */
-// export const Box = styled.div`
-// border: 1px solid;
-// img:hover {
-//   background-color: blue;
-// }
-// `
-
-export const Image = styled.img`
-overflow: hidden;
-transition: transform 0.2s ease;
-width: 10vw;
-cursor: pointer;
-&:hover{
-  width: 20vw;
-  border: solid 1px orange;
-  transform: scale (1.1);
+img {
+  border-radius: 30% 0 0 0 ;
+  width: 7vw;
+  &:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
 }
 `

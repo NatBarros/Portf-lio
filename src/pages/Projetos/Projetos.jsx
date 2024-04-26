@@ -4,20 +4,35 @@ import prime from "../../assets/prime.png"
 import ritmo from "../../assets/ritmo.png"
 import selfcare from "../../assets/selfcare.png"
 import mcdonalds from "../../assets/mcdonalds.png"
-import Card from "../../components/Card/Card"
+import Carrosel from "react-elastic-carousel"
+
 
 export default function Projetos() {
   return (
     <S.Main>
         <Header/>
         <S.Projetos>
-            <h1>Projetos</h1>
-            <S.Cards>
-              <Card imagem={prime} texto={"HTML + CSS"}/>
-              <Card imagem={ritmo} texto={"HTML + CSS"}/>
-              <Card imagem={selfcare} texto={"HTML + CSS"}/>
-              <Card imagem={mcdonalds} texto={"HTML + CSS + REACT + JS"}/>
-            </S.Cards>
+          <h1>Projetos</h1>
+          <S.Lista>
+            <Carrosel>
+            <figure>
+            <img src={mcdonalds} alt="imagem do projeto mcdonalds"/>
+              <p>HTML + CSS + JS + REACT</p>
+            </figure>
+            <figure>
+              <img src={ritmo} alt="imagem do projeto no ritmo da batida"/>
+              <p>HTML + CSS</p>
+            </figure>
+            <figure>
+              <img src={selfcare} alt="imagem do projeto selfcare"/>
+              <p>HTML + CSS</p>
+            </figure>
+            <figure>
+            <img src={prime} alt="imagem do projeto prime"/>
+              <p>HTML + CSS</p>
+            </figure>
+            </Carrosel>
+          </S.Lista>
         </S.Projetos>
     </S.Main>
   )

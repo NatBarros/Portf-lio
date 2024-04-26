@@ -1,30 +1,90 @@
-import styled from "styled-components";
+import styled, { css } from 'styled-components';
 
+
+const center = css`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  `
 
 export const Main = styled.main`
-/* border: solid 1px red; */
+display: flex;
 height: 100vh;
 background-color: #13131F;
-display: flex;
+align-items: center;
 justify-content: center;
 
 `
 export const Projetos = styled.section`
-padding-top: 10%;
-/* border: solid 1px yellow; */
-width: 80vw;
+${center};
+flex-direction: column;
+align-items: center;
+border: solid 1px yellow;
+width: 85%;
+padding: 2% 0; 
 h1 {
-    font-size: 3.2rem;
-    font-weight: 500;
-    color: #8257E6;
-    line-height: 6rem;
-    text-align: center;
+  margin-bottom: 5%;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #8257E6;
+  line-height: 3rem;
+  text-align: center;
 }
+@media (min-width: 576px) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 4rem;
+    }
+  }
+@media (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+      line-height: 4.5rem;
+    }
+  }
+@media (min-width: 992px) {
+    h1 {
+      font-size: 3.2rem;
+      line-height: 6rem;
+    }
+  }
 `
 
-// export const Cards = styled.div`
-//     ${Center}
-//     justify-content: space-evenly;
-//     margin-top: 5%;
-//     width: 90vw;
-// `
+export const Lista = styled.div`
+margin-bottom: 8% ;
+ border: solid 2px blue;
+width: 80vw;
+display: flex;
+flex-direction: column;
+align-items: center; 
+img{
+  width: 75vw;
+  height: auto;
+  max-width: 400px;
+  @media (min-width: 576px) {
+      width: 60vw;
+    }
+
+  @media (min-width: 768px) {
+      width: 50vw;
+    }
+
+  @media (min-width: 992px) {
+      width: 40vw;
+    }
+}
+p{ 
+color: #8257E6;
+font-weight: 500;
+font-size: 1.2rem; 
+text-align: center;
+@media (min-width: 576px) {
+      font-size: 1.3rem;
+    }
+
+@media (min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+`
+
