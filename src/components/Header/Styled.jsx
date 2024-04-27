@@ -22,7 +22,7 @@ width: 15vw;
 display: flex;
 flex-direction: column;
 background-image: linear-gradient(to left, #8257E6, #13131F);
-border: solid 1px yellow;
+/* border: solid 1px yellow; */
 @media (max-width: 770px) {
     width: 30vw;
   }
