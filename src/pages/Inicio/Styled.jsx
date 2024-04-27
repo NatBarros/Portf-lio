@@ -113,14 +113,9 @@ h2 {
     font-weight: 500;
     line-height: 3rem;
     font-size: 1.5rem;
-    /* @media (max-width: 586px) {
-    font-size: 1rem;
-    line-height: 2rem;
-  } */
 
   @media (max-width: 450px) {
     /* border: solid 1px green; */
-    margin-top: 0;
     font-size: 1.1rem;
   }
 }
