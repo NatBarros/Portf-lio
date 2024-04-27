@@ -17,7 +17,7 @@ export default function Projetos() {
             <Carrosel>
             <figure>
             <img src={mcdonalds} alt="imagem do projeto mcdonalds"/>
-              <p>HTML + CSS + JS + REACT</p>
+              <p>HTML + STYLED-COMPONENTS + JS + REACT</p>
             </figure>
             <figure>
               <img src={ritmo} alt="imagem do projeto no ritmo da batida"/>

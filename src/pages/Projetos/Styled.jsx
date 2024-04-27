@@ -14,6 +14,7 @@ background-color: #13131F;
 align-items: center;
 justify-content: center;
 
+
 `
 export const Projetos = styled.section`
 ${center};

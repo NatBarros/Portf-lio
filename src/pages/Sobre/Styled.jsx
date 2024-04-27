@@ -11,11 +11,17 @@ export const Main = styled.main`
 display: flex;
 height: 100vh;
 background-color: #13131F;
+@media (max-width: 450px) {
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 export const Caixapai = styled.section`
 ${center}
 flex-direction: column;
 width: 85%;
+height: 100%;
 /* border: solid 1px blue; */
 `
 
@@ -23,10 +29,9 @@ export const Sobre = styled.section`
 
 /* border: solid 3px red; */
 width: 70%;
-height: 55vh;
+height: 100%;
 @media (max-width: 1000px) {
-  height: 80vh;
-  width: auto;
+  width: 100%;
   }
 h1 {
     font-size: 3.2rem;
@@ -37,8 +42,9 @@ h1 {
     @media (max-width: 800px) {
     font-size: 2.5rem;
   }
-  @media (max-width: 630px) {
-    font-size: 2rem;
+  @media (max-width: 770px) {
+    font-size: 1.5rem;
+    line-height: 4rem;
   }
 }
 p {
@@ -50,13 +56,18 @@ p {
   }
   @media (max-width: 630px) {
     font-size: 12px;
+    line-height: 1rem;
   }
 }
 `
 export const Habilidades = styled.section`
 /* border: solid 1px yellow; */
-/* border: solid 1px green; */
+margin-bottom: 5%;
 width: 70%;
+@media (max-width: 1000px) {
+  width: 100%;
+  height: 30%;
+  }
 h2{
   color: white;
   font-weight: 700;
@@ -65,19 +76,18 @@ h2{
   @media (max-width: 630px) {
     font-size: 1.4 rem;
   }
+  @media (max-width: 450px) {
+    font-size: 1.2rem;
+  }
 }
 
 `
 export const Box = styled.div`
 /* border: solid 1px green; */
-padding-top: 2%;
-height: 20vh;
 display: flex;
+margin-top: 3%;
 justify-content: space-evenly;
 align-items: center;
-@media (max-width: 545px) {
-    height: 10vh;
-  }
 img {
   border-radius: 30% 0 0 0 ;
   width: 7vw;

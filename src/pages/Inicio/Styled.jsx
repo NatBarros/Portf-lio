@@ -12,32 +12,22 @@ export const Main = styled.main`
 display: flex;
 height: 100vh;
 background-color: #13131F;
+  @media (max-width: 450px) {
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 export const Inicio = styled.section`
 /* border: solid 3px red; */
-margin: 7% 0 0 1% ;
-width: 90%;
-  height: auto;
-  ${center}
-@media (max-width: 768px) {
-    width: 90vw;
-    margin-top: 6%;
+margin-top: 7%;
+width: 70%;
+  ${center};
+@media (max-width: 450px) {
+    width: 100%;
+    margin-top: 0%;
 }
-@media (min-width: 576px) {
-    width: 80%;
-  }
   
-  @media (min-width: 768px) {
-    width: 70%;
-  }
-
-  @media (min-width: 992px) {
-    width: 60%;
-  }
-
-  @media (min-width: 1200px) {
-    width: 50%;
-  }
 `
 export const Name = styled.div`
 /* border: solid 2px yellow; */
@@ -58,20 +48,14 @@ h1 {
     font-weight: 500;
     color: #F9F9F9;
     line-height: 5.4rem;
-    @media (min-width: 576px) {
-      font-size: 2rem;
-      line-height: 3.5rem;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 3rem;
-      line-height: 4rem;
-    }
-
-    @media (min-width: 992px) {
-      font-size: 3.5rem;
-      line-height: 4.5rem;
-    }
+    @media (max-width: 630px) {
+    /* border: solid 1px green; */
+    font-size: 1.5rem;
+    line-height: 4rem;
+  }
+  @media (max-width: 450px) {
+   margin-top: 5%;
+  }
 }
 
 span {
@@ -79,57 +63,71 @@ span {
     font-weight: 500;
     line-height: 5.4rem;
     color: #8257E6;
+    @media (max-width: 684px) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  @media (max-width: 290px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 }
 
 p {
+  margin-top: 8%;
     text-align: center;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #7B797C;
-    @media (min-width: 576px) {
-      font-size: 1.2rem;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 1.4rem;
-    }
-
-    @media (min-width: 992px) {
-      font-size: 1.6rem;
-    }
+    @media (max-width: 586px) {
+    font-size: 1.3rem;
+  }
+  @media (max-width: 290px) {
+    /* border: solid 1px green; */
+    font-size: 1rem;
+  }
 }
 `
 
 export const Box = styled.div`
 /* border: solid 1px white; */
-padding: 2rem;
 width: 100%;
 text-align: center;
-margin-top: 1rem;
+margin-top: 10%;
+margin-left: 5%;
+@media (max-width: 684px) {
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  @media (max-width: 500px) {
+    margin-left: 0;
+  }
+@media (max-width: 290px) {
+    width: 100%;
+  }
+
 h2 {
     color: #F9F9F9;
     font-weight: 500;
     line-height: 3rem;
     font-size: 1.5rem;
-    @media (min-width: 576px) {
-      font-size: 1.8rem;
-    }
+    @media (max-width: 586px) {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 
-    @media (min-width: 768px) {
-      font-size: 2rem;
-      line-height: 3rem;
-    }
-
-    @media (min-width: 992px) {
-      font-size: 2.2rem;
-    }
+  @media (max-width: 290px) {
+    /* border: solid 1px green; */
+    font-size: 1rem;
+  }
 }
 `
 
 export const Banner = styled.section`
 /* border: solid 1px white; */
 height: 50vh;
-margin: 12% 3% 0 8%;
+margin-top: 8%;
 img {
     width: 20vw;
     max-width: 100%;
@@ -138,17 +136,8 @@ img {
     &:hover {
         transform: scale(1.2);
     }
-    @media (min-width: 576px) {
-      width: 60vw;
+    @media (max-width: 500px) {
+      display: none;
     }
-
-    @media (min-width: 768px) {
-      width: 40vw;
-    }
-
-    @media (min-width: 992px) {
-      width: 20vw;
-    }
-
 }
 `

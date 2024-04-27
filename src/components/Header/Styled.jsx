@@ -19,49 +19,77 @@ const center = css`
 
 export const Header = styled.header`
 width: 15vw;
-max-width: 300px; 
 display: flex;
-align-items: center;
 flex-direction: column;
 background-image: linear-gradient(to left, #8257E6, #13131F);
-@media (max-width: 700px) {
+border: solid 1px yellow;
+@media (max-width: 770px) {
+    width: 30vw;
+  }
+  @media (max-width: 450px) {
+    height: 34%;
     width: 100%;
-}
+  }
 `
 
 export const Logo = styled.div`
-/* border: solid 1px green; */
+/* border: solid 3px yellow; */
 height: 38vh;
 width: 100%;
 ${center}
 flex-direction: column;
 justify-content: space-evenly;
 color: white;
-@media (max-width: 700px) {
-      display: none;
+@media (max-width: 600px) {  
+    img {
+      width: 15vw;
     }
+  }
+
+  @media (max-width: 450px) {
+    height: 100%;
+  }
+
+    @media (max-width: 450px) {
+    img {
+      width: 20%;
+    }
+  }
+  @media (max-width: 450px) {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    /* border: solid 1px red; */
+  }
 img  {
     width: 45%;
     max-width: 120px;
     border-radius: 50%;
     @media (max-width: 700px) {
-      width: 30%; // Aumenta um pouco em telas menores
+      width: 50%;
+    }
+    @media (max-width: 450px) {
+      width: 13%;
     }
 }
 h2 {
-    width: 100%;
     font-size: 2rem;
     /* border: solid 1px red; */
     text-align: center;
     @media (max-width: 600px) {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+  }
+  @media (max-width: 800px) {
+    font-size: 1.6rem;
 }
 }
 p{
-    width: 100%;
     font-size: 1rem;
     /* border: solid 1px red; */
     text-align: center;
+    @media (max-width: 450px) {
+    font-size: 11px;
+  }
 }
 `
 
@@ -71,10 +99,11 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-@media (max-width: 700px) { // Configurações para telas menores que 700px
-    width: 100%; 
-    flex-direction: row; // Muda para layout horizontal apenas em telas menores
-    justify-content: space-between; // Distribui o conteúdo uniformemente nas telas menores
+
+  @media (max-width: 450px) {
+    /* border: solid 1px green; */
+    height: 100%;
+    width: 100%;
   }
 
 ul{
@@ -100,6 +129,12 @@ border-top:${props => props.linha};
 a{
     color: white;  
     }
+
+    @media (max-width: 450px) {
+    /* border: solid 1px blue; */
+    height: 5vh;
+    width: 100%;
+  }
 `
 
 export const Icones = styled.div`
@@ -109,6 +144,9 @@ display: flex;
 align-items: center;
 justify-content: space-evenly;
 flex-direction: column;
+    @media (max-width: 450px) {
+      display: none;
+    }
 
 img {
     width: 80%;
@@ -118,7 +156,7 @@ img {
     &:hover {
         transform: scale(1.2);
     }
-    @media (max-width: 700px) {
+    @media (max-width: 450px) {
       display: none;
     }
 }
