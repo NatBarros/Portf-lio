@@ -90,36 +90,38 @@ p {
 `
 
 export const Box = styled.div`
-/* border: solid 1px white; */
+border: solid 1px white;
 width: 100%;
 text-align: center;
-margin-top: 10%;
+margin-top: 15%;
 margin-left: 5%;
 @media (max-width: 684px) {
     width: 100%;
-    margin-top: 20%;
   }
 
   @media (max-width: 500px) {
     margin-left: 0;
+    margin-top: 0;
   }
 @media (max-width: 290px) {
     width: 100%;
   }
+  
 
 h2 {
     color: #F9F9F9;
     font-weight: 500;
     line-height: 3rem;
     font-size: 1.5rem;
-    @media (max-width: 586px) {
+    /* @media (max-width: 586px) {
     font-size: 1rem;
     line-height: 2rem;
-  }
+  } */
 
-  @media (max-width: 290px) {
+  @media (max-width: 450px) {
     /* border: solid 1px green; */
-    font-size: 1rem;
+    margin-top: 0;
+    font-size: 1.1rem;
   }
 }
 `
