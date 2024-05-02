@@ -23,7 +23,7 @@ export const Projetos = styled.section`
 ${center};
 justify-content: space-evenly;
 flex-direction: column;
-border: solid 1px yellow;
+/* border: solid 1px yellow; */
 width: 85%;
 height: 100%;
 @media (max-width: 450px) {
@@ -44,7 +44,7 @@ h1 {
 `
 
 export const Lista = styled.div`
- border: solid 2px blue;
+ /* border: solid 2px blue; */
 width: 90%;
 display: flex;
 justify-content: center;

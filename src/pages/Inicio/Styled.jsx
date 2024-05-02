@@ -32,23 +32,21 @@ flex-direction: column;
 `
 
 export const Cima = styled.section`
-border: solid 2px blue;
+/* border: solid 2px blue; */
 width: 100%;
 display: flex;
 justify-content: space-evenly;
 @media (max-width: 450px) {
+  margin-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 `
 export const Baixo = styled.section`
-border: solid 2px pink;
+/* border: solid 2px pink; */
 width: 100%;
 margin-top: 5%;
-@media (max-width: 450px) {
-    margin-top: 0;
-  }
 `
 
 export const Frase=styled.h2`

@@ -23,7 +23,7 @@ ${center}
 flex-direction: column;
 width: 85%;
 height: 100%;
-border: solid 1px blue;
+/* border: solid 1px blue; */
 @media (max-width: 450px) {
     width: 90%;
     margin-left: 0;
@@ -32,7 +32,7 @@ border: solid 1px blue;
 `
 
 export const Sobre = styled.section`
-border: solid 3px red;
+/* border: solid 3px red; */
 width: 90%;
 @media (max-width: 450px) {
   width: 100%;
@@ -78,7 +78,7 @@ p {
 }
 `
 export const Habilidades = styled.section`
-border: solid 1px yellow;
+/* border: solid 1px yellow; */
 width: 70%;
 margin-top: 5%;
 @media (max-width: 1000px) {
@@ -86,7 +86,7 @@ margin-top: 5%;
   height: 30%;
   }
   @media (max-width: 450px) {
- margin-top: 0;
+ margin-top: 10%;
   }
 h2{
   color: white;
@@ -103,12 +103,15 @@ h2{
 
 `
 export const Box = styled.div`
-border: solid 1px green;
+/* border: solid 1px green; */
 display: flex;
-margin-top: 1%;
+margin-top: 6%;
 height: 60%;
 justify-content: space-evenly;
 align-items: center;
+@media (max-width: 450px) {
+ margin-top: 4%;
+  }
 
 img {
   border-radius: 30% 0 0 0 ;
