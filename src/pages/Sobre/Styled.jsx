@@ -13,6 +13,7 @@ height: 100vh;
 background-color: #13131F;
 @media (max-width: 450px) {
     width:100%;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
   }
@@ -22,29 +23,39 @@ ${center}
 flex-direction: column;
 width: 85%;
 height: 100%;
-/* border: solid 1px blue; */
+border: solid 1px blue;
+@media (max-width: 450px) {
+    width: 90%;
+    margin-left: 0;
+  }
+
 `
 
 export const Sobre = styled.section`
-
-/* border: solid 3px red; */
-width: 70%;
-height: 100%;
-@media (max-width: 1000px) {
+border: solid 3px red;
+width: 90%;
+@media (max-width: 450px) {
   width: 100%;
   }
 h1 {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     font-weight: 500;
     color: #8257E6;
-    line-height: 6rem;
+    line-height: 3rem;
     text-align: center;
     @media (max-width: 800px) {
     font-size: 2.5rem;
   }
   @media (max-width: 770px) {
-    font-size: 1.5rem;
-    line-height: 4rem;
+    font-size: 2rem;
+  }
+  @media (max-width: 450px) {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+  @media (max-width: 390px) {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 p {
@@ -55,18 +66,27 @@ p {
     font-size: 14px;
   }
   @media (max-width: 630px) {
+    line-height: 1.4rem;
+  }
+  @media (max-width: 450px) {
     font-size: 12px;
-    line-height: 1rem;
+  }
+  @media (max-width: 390px) {
+    font-size: 11px;
+    line-height: 1.3rem;
   }
 }
 `
 export const Habilidades = styled.section`
-/* border: solid 1px yellow; */
-margin-bottom: 5%;
+border: solid 1px yellow;
 width: 70%;
+margin-top: 5%;
 @media (max-width: 1000px) {
   width: 100%;
   height: 30%;
+  }
+  @media (max-width: 450px) {
+ margin-top: 0;
   }
 h2{
   color: white;
@@ -83,11 +103,13 @@ h2{
 
 `
 export const Box = styled.div`
-/* border: solid 1px green; */
+border: solid 1px green;
 display: flex;
-margin-top: 3%;
+margin-top: 1%;
+height: 60%;
 justify-content: space-evenly;
 align-items: center;
+
 img {
   border-radius: 30% 0 0 0 ;
   width: 7vw;

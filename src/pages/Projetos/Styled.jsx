@@ -11,81 +11,66 @@ export const Main = styled.main`
 display: flex;
 height: 100vh;
 background-color: #13131F;
-align-items: center;
 justify-content: center;
-
-
+@media (max-width: 450px) {
+    width:100%;
+    justify-content: center;
+    flex-direction: column;
+  }
 `
+
 export const Projetos = styled.section`
 ${center};
+justify-content: space-evenly;
 flex-direction: column;
-align-items: center;
-/* border: solid 1px yellow; */
+border: solid 1px yellow;
 width: 85%;
-padding: 2% 0; 
+height: 100%;
+@media (max-width: 450px) {
+    width: 100%;
+  }
 h1 {
-  margin-bottom: 5%;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #8257E6;
-  line-height: 3rem;
-  text-align: center;
+  font-size: 2.6rem;
+    font-weight: 500;
+    color: #8257E6;
+    line-height: 4rem;
+    text-align: center;
+  @media (max-width: 450px) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
-@media (min-width: 576px) {
-    h1 {
-      font-size: 2.5rem;
-      line-height: 4rem;
-    }
-  }
-@media (min-width: 768px) {
-    h1 {
-      font-size: 3rem;
-      line-height: 4.5rem;
-    }
-  }
-@media (min-width: 992px) {
-    h1 {
-      font-size: 3.2rem;
-      line-height: 6rem;
-    }
-  }
+
 `
 
 export const Lista = styled.div`
-margin-bottom: 8% ;
- /* border: solid 2px blue; */
-width: 80vw;
+ border: solid 2px blue;
+width: 90%;
 display: flex;
-flex-direction: column;
-align-items: center; 
-img{
-  width: 75vw;
-  height: auto;
-  max-width: 400px;
-  @media (min-width: 576px) {
-      width: 60vw;
-    }
-
-  @media (min-width: 768px) {
-      width: 50vw;
-    }
-
-  @media (min-width: 992px) {
-      width: 40vw;
-    }
-}
-p{ 
-color: #8257E6;
-font-weight: 500;
-font-size: 1.2rem; 
-text-align: center;
-@media (min-width: 576px) {
-      font-size: 1.3rem;
-    }
-
-@media (min-width: 768px) {
-      font-size: 1.4rem;
-    }
+justify-content: center;
+align-items: center;
+margin-top: 3%;
+@media (max-width: 450px) {
+   height: 50%;
   }
+video {
+  width: 90%;
+}
 `
-
+export const Icones = styled.div`
+    @media (max-width: 1300px) {
+      display: none;
+    }
+    @media (max-width: 450px) {
+      display: flex;
+    }
+  img {
+    width: 80%;
+    max-width: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+}
+}
+`

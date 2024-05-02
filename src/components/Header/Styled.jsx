@@ -24,7 +24,7 @@ flex-direction: column;
 background-image: linear-gradient(to left, #8257E6, #13131F);
 /* border: solid 1px yellow; */
 @media (max-width: 770px) {
-    width: 30vw;
+    width: 20vw;
   }
   @media (max-width: 450px) {
     height: 34%;
@@ -46,18 +46,15 @@ color: white;
     }
   }
 
-  @media (max-width: 450px) {
-    height: 100%;
-  }
-
-    @media (max-width: 450px) {
+    /* @media (max-width: 450px) {
     img {
-      width: 20%;
+      width: 10%;
     }
-  }
+  } */
   @media (max-width: 450px) {
     flex-direction: row;
     width: 100%;
+    height: 100%;
     justify-content: space-evenly;
     /* border: solid 1px red; */
   }
